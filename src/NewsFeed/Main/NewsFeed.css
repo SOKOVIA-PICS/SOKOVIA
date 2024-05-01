@@ -1,0 +1,11 @@
+.newsfeed {
+  width: 35vw;
+  height: 100vh;
+  background-color: #31363f;
+  overflow-y: scroll;
+}
+.newsfeed::-webkit-scrollbar {
+  display: none;
+}
+.postContainer {
+}
