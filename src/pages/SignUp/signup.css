@@ -1,0 +1,102 @@
+.container {
+    min-width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #31363F;
+    width: 25%;
+    padding: 20px 30px 20px 30px;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 520;
+    font-family: sans-serif;
+    color: white;
+}
+
+form p {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #b8b6b2;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #222831;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form button {
+    background-color: #76ABAE;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+form h3 {
+    color: grey;
+    font-family: sans-serif;
+    margin-top:  10px;
+}
+
+form h3 a {
+    color: #76ABAE;
+}
+
+form h3 a:hover {
+    text-decoration: underline;
+}
+
+.other-login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.other-login div {
+    width: 48%;
+}
+
+.google img {
+    width: 70px;
+}   
+
+.facebook img {
+    width: 70px;
+}   

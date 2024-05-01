@@ -1,6 +1,7 @@
 import './login.css'
 import facebookIcon from '../../assets/facebook.png'
 import googleIcon from '../../assets/google.png'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -19,7 +20,7 @@ const Login = () => {
                         <input type="text" />
 
                         <button className="login-btn">Log In</button>
-                        <h3>A fricking new user? <a href="#">Register</a></h3>
+                        <h3>A fricking new user? <a href="/login"></a></h3>
                     </form>
                     <div className="other-login">
                         <div className="google">
