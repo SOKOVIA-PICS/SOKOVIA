@@ -6,4 +6,6 @@ const Home = () => {
     )
 }
 
+const app = 'hello'
+
 export default Home;
