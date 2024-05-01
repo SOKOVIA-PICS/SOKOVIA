@@ -4,10 +4,11 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import Signup from './pages/SignUp/Signup';
+import Home from './pages/Home/Home';
 
 const App = () => (
   <Routes>
-    <Route path='/' element={<h1>We'll make it later Go to /login or /signup</h1>} />
+    <Route path='/' element={<Home />} />
     <Route path="/login" element={<Login />} />
     <Route path="/signup" element={<Signup />} />
   </Routes>
