@@ -2,7 +2,9 @@ import './login.css'
 
 const Login = () => {
     return (
-        <h1>login</h1>
+        <div className="container">
+            <div className="cover"></div>
+        </div>
     )
 }
 
