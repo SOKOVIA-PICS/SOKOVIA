@@ -4,7 +4,7 @@ import { Outlet, Route } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="flex ">
+    <div className="flex bg-white dark:bg-dark-900 dark:text-white ">
       <div className="w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12"></div>
       <Sidebar />
       <div className="flex  w-8/12">

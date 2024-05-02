@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavComponent from "./Nav.component";
+import ThemeSwitch from "../ThemeMode/ThemeSwitch.component";
 
 const SidebarComponent = () => {
   const [nav, setNav] = useState([
@@ -99,9 +100,13 @@ const SidebarComponent = () => {
   ]);
 
   return (
-    <div className=" fixed min-h-screen columns-1 px-3 bg-white border-r shadow w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12">
-      <div className="flex flex-col py-4">
-        <h1 className=" text-lg text-teal font-bold px-8 mb-8">SOKOVIA</h1>
+    <div className=" fixed min-h-screen columns-1 px-3 bg-white border-r dark:border-grey/10 shadow w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 dark:bg-dark-900">
+      <div className="flex flex-col py-4 ">
+        <div className="mb-8 flex items-center">
+          <h1 className=" text-lg text-teal font-bold px-8 me-auto ">SOKOVIA</h1>
+          <div className=" pe-4"><ThemeSwitch/></div>
+        </div>
+        
         {nav.map(({ name, to, svg, activeSvg }, index) => (
           <NavComponent
             key={index}
@@ -112,6 +117,7 @@ const SidebarComponent = () => {
           />
         ))}
       </div>
+      
     </div>
   );
 };

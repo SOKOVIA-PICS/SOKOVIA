@@ -28,7 +28,7 @@ const NavComponent = ({ name, to, svg, activeSvg }) => {
     <NavLink
       to={to}
       ref={ref}
-      className=" text-teal flex items-center gap-3 group px-8 py-2 rounded-lg hover:bg-dark-500/5"
+      className=" text-teal flex items-center gap-3 group px-8 py-2 rounded-lg hover:bg-dark-500/5 hover:dark:bg-grey/5"
     >
       {isActive ? activeSvg : svg}
       <p className=" tracking-wider">{name} </p>
