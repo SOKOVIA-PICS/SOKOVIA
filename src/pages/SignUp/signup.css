@@ -81,7 +81,7 @@ form h3 a:hover {
     text-decoration: underline;
 }
 
-.other-login {
+.other-login-2 {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -89,14 +89,20 @@ form h3 a:hover {
     margin-top: 20px;
 }
 
-.other-login div {
+.other-login-2 div {
     width: 48%;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.google img {
+.other-login-2 .google img {
     width: 70px;
+    display: flex;
 }   
 
-.facebook img {
+.other-login-2 .facebook img {
     width: 70px;
 }   
