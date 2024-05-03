@@ -139,9 +139,10 @@ const ThemeSwitch = () => {
           onClick={toggleThemeMode}
           className={` ${
             themeMode === theme ? "flex" : "hidden"
-          } text-dark-500 dark:text-grey hover:scale-110 duration-75 hover:text-teal gap-2 items-center`}
+          } text-dark-500 dark:text-grey group hover:text-teal gap-2 items-center`}
         >
-          {icon} <p className="hidden md:flex">{label}</p>
+          <span className=" group-hover:scale-125 duration-75">{icon}</span>{" "}
+          <p className="hidden md:flex">{label}</p>
         </button>
       ))}
     </div>
