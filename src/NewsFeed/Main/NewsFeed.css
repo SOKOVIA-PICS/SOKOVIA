@@ -1,11 +1,15 @@
 .newsfeed {
   width: 35vw;
   height: 100vh;
-  background-color: #31363f;
+  background-color: #eeeeee;
   overflow-y: scroll;
 }
 .newsfeed::-webkit-scrollbar {
   display: none;
 }
 .postContainer {
+}
+.postContainer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }

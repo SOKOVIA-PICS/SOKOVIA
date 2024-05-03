@@ -5,6 +5,7 @@ import Post from "../Post/Post";
 import user from "../../assets/ForNewsFeed/user-solid.svg";
 import Upload from "../Upload/Upload";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const NewsFeed = () => {
   const [lastScroll, setLastScroll] = useState(0);
@@ -30,12 +31,11 @@ const NewsFeed = () => {
   });
 
   return (
-    <div className="newsfeed relative" ref={newFeedRef}>
+    <div className="newsfeed relative mx-auto" ref={newFeedRef}>
       <div className="NaberContainer w-full relative">
         <Nabar scroll={scrollUp} />
       </div>
-
-      <div className="postContainer">
+      <div className="postContainer ">
         <Post
           userProfile={user}
           userName={"A Handsome Frontend"}
@@ -50,7 +50,9 @@ const NewsFeed = () => {
         />
       </div>
       <div className="UploadContainer"></div>
-      <Footer />
+      <Link to={"/upload_post"}>
+        <Footer />
+      </Link>
     </div>
   );
 };
