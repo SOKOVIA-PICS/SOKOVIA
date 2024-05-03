@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
-import { ThemeContext } from '../../context/ThemeContext'
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const ThemeSwitch = () => {
-
-  const {themeMode, toggleThemeMode} = useContext(ThemeContext);
+  const { themeMode, toggleThemeMode } = useContext(ThemeContext);
 
   const themeOptions = [
     {
@@ -76,7 +75,8 @@ const ThemeSwitch = () => {
           />
         </svg>
       ),
-      text: "light",
+      theme: "light",
+      label: "Light Theme",
     },
     {
       icon: (
@@ -93,7 +93,8 @@ const ThemeSwitch = () => {
           />
         </svg>
       ),
-      text: "dark",
+      theme: "dark",
+      label: "Dark Theme",
     },
     {
       icon: (
@@ -125,16 +126,26 @@ const ThemeSwitch = () => {
           />
         </svg>
       ),
-      text: "system",
+      theme: "system",
+      label: "System Theme",
     },
   ];
 
-
   return (
     <div>
-      {themeOptions.map(({icon, text}) => <button key={text} onClick={toggleThemeMode} className={` ${themeMode === text ? "flex" : "hidden"} text-teal hover:scale-110 duration-75 hover:text-dark-500 hover:dark:text-grey`}>{icon}</button>)}
+      {themeOptions.map(({ icon, theme, label }) => (
+        <button
+          key={theme}
+          onClick={toggleThemeMode}
+          className={` ${
+            themeMode === theme ? "flex" : "hidden"
+          } text-dark-500 dark:text-grey hover:scale-110 duration-75 hover:text-teal gap-2 items-center`}
+        >
+          {icon} <p className="hidden md:flex">{label}</p>
+        </button>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ThemeSwitch
+export default ThemeSwitch;
