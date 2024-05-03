@@ -31,7 +31,7 @@ const Signup = () => {
 
                         <div className="facebook">
                             <img src={facebookIcon} alt="" />
-                            <h4>Facebook</h4>
+                            <h4 style={{color: 'white'}}>Facebook</h4>
                         </div>
                     </div>
 
