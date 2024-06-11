@@ -1,9 +1,8 @@
-import './home.css'
+import "./home.css";
+import Newsfeed from "../../NewsFeed/Main/NewsFeed";
 
 const Home = () => {
-    return (
-        <h1 className='text-2xl h-[300vh]'>You're part</h1>
-    )
-}
+  return <Newsfeed />;
+};
 
 export default Home;

@@ -9,7 +9,7 @@ const Nabar = ({ scroll }) => {
 
   return (
     <div
-      className={`HeaderNabar w-[35vw] fixed top-0 flex justify-between h-14 items-center bg-[#222831] px-6 ${
+      className={`HeaderNabar w-[35vw] fixed top-0 flex justify-between h-14 items-center bg-[#76ABAE] px-6 ${
         scroll ? "" : "scrollDown"
       }`}
     >

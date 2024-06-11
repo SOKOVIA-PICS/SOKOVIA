@@ -3,8 +3,8 @@ import "./Post.css";
 
 const Post = ({ userProfile, userName, url, caption }) => {
   return (
-    <div className="post">
-      <div className="postHeader flex px-3 justify-start items-center gap-3 my-3">
+    <div className="post ">
+      <div className="postHeader flex px-3 justify-start items-center gap-3 ">
         <div className="profileBox w-[30px] h-[30] rounded-[50%] border-solid border-black  ">
           <img
             src={userProfile}
@@ -13,7 +13,7 @@ const Post = ({ userProfile, userName, url, caption }) => {
           />
         </div>
 
-        <h2>{userName}</h2>
+        <h2 className="text-[20px] font-bold  text-[black]">{userName}</h2>
       </div>
       <div className="imgContainer max-w-full max-h-[90%] ">
         <img src={url} className="object-contain w-full h-[70vh]" />
